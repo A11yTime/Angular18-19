@@ -1,0 +1,123 @@
+/* 🌈 Background and Layout */
+:host {
+  display: block;
+  padding: 2rem;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+/* ✨ Section Title */
+h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  color: #f8f8f8;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* 🔄 Loading & Error States */
+.loading, .error {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 1rem;
+}
+
+.loading {
+  color: #00bcd4;
+  animation: pulse 1.5s infinite;
+}
+
+.error {
+  color: #ff4b5c;
+}
+
+/* 👥 User Card */
+.user-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  padding: 1.5rem 2rem;
+  margin: 1rem auto;
+  max-width: 650px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+}
+
+.user-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* 🧍‍♂️ Header (Avatar + Name) */
+.user-header {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.user-header img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 2px solid #ffd54f;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(255, 213, 79, 0.6);
+}
+
+.user-header h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #ffeb3b;
+  text-transform: capitalize;
+}
+
+.username {
+  font-size: 0.95rem;
+  color: #cfd8dc;
+  opacity: 0.9;
+}
+
+/* 📨 User Info */
+.user-info p {
+  margin: 6px 0;
+  font-size: 1rem;
+  color: #e0e0e0;
+}
+
+.user-info strong {
+  color: #ffd54f;
+}
+
+/* 🌟 Animation */
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  :host {
+    padding: 1rem;
+  }
+
+  .user-card {
+    padding: 1.2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .user-header img {
+    width: 60px;
+    height: 60px;
+  }
+}

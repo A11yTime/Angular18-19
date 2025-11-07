@@ -1,0 +1,19 @@
+   <section *ngIf="users.length; else loading" class="user-list-container">
+      <h2>👥 User List</h2>
+      <ul>
+        <li *ngFor="let user of users" class="user-card">
+          <div class="avatar">{{ user.name[0] | uppercase }}</div>
+          <div class="user-info">
+            <strong>{{ user.name }}</strong>
+            <span>{{ user.email }}</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <ng-template #loading>
+      <div class="loading">
+        <div class="spinner"></div>
+        <p>Loading users...</p>
+      </div>
+    </ng-template>

@@ -1,0 +1,26 @@
+<ng-container>
+  <h2>👤 User Directory</h2>
+
+  <div *ngIf="loading" class="loading">Loading users...</div>
+  <div *ngIf="error" class="error">Error: {{ error }}</div>
+
+  <div *ngIf="!loading && !error">
+    <div *ngFor="let user of users" class="user-card">
+      <div class="user-header">
+        <img [src]="'https://i.pravatar.cc/100?u=' + user.id" alt="Avatar" />
+
+        <div>
+          <h3>{{ user.name?.firstname | capitalize }} {{ user.name?.lastname | capitalize }}</h3>
+          <p class="username">{{ user.username }}</p>
+        </div>
+      </div>
+
+      <div class="user-info">
+        <p><strong>Email:</strong> {{ user.email }}</p>
+        <p><strong>City:</strong> {{ user.address?.city }}</p>
+        <p><strong>Street:</strong> {{ user.address?.street }}</p>
+        <p><strong>Phone:</strong> {{ user.phone }}</p>
+      </div>
+    </div>
+  </div>
+</ng-container>

@@ -1,0 +1,13 @@
+<h2>🛍️ Product List</h2>
+
+<div *ngIf="loading" class="loading">Loading products...</div>
+<div *ngIf="error" class="error">Error: {{ error }}</div>
+
+<div *ngIf="!loading && !error">
+  <div *ngFor="let product of products" class="product-card">
+    <img [src]="product.image" alt="{{ product.title }}" width="100">
+    <h3>{{ product.title }}</h3>
+    <p>{{ product.description | truncate:100 }}</p>
+    <p><strong>Price:</strong> {{ product.price | currency }}</p>
+  </div>
+</div>
