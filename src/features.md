@@ -107,10 +107,7 @@ Two-Dimensional Drag and Drop
 
 New UI capability for advanced interactions [angularminds.com]
 
-
-
-
-🧩 New Directives & Attributes in Angular 18/19
+# New Directives & Attributes in Angular 18/19
 ✅ Built-in Attribute Directives
 
 ngClass – Conditional class binding
@@ -176,6 +173,7 @@ Use withNavigationErrorHandler() instead of Router.errorHandlerturn2search20�
 
 
 # DirectiveDescription*ngIfConditionally includes a template*ngForIterates over a list*ngSwitchSwitch-case renderingngClassAdds/removes CSS classes dynamicallyngStyleApplies inline styles dynamicallyngModelTwo-way data binding for forms
+
 🛠️ Custom Attribute Directive Example
 TypeScript@Directive({  selector: '[appHighlight]'})export class HighlightDirective {  constructor(private el: ElementRef) {    this.el.nativeElement.style.backgroundColor = 'yellow';  }}Show more lines
 Usage:
