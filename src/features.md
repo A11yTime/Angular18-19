@@ -167,28 +167,4 @@ Use withNavigationErrorHandler() instead of Router.errorHandlerturn2search20�
 
 
 
-📘 Angular Directives & Signals Cheat Sheet
-🧩 Common Directives
 
-
-
-# DirectiveDescription*ngIfConditionally includes a template*ngForIterates over a list*ngSwitchSwitch-case renderingngClassAdds/removes CSS classes dynamicallyngStyleApplies inline styles dynamicallyngModelTwo-way data binding for forms
-
-🛠️ Custom Attribute Directive Example
-TypeScript@Directive({  selector: '[appHighlight]'})export class HighlightDirective {  constructor(private el: ElementRef) {    this.el.nativeElement.style.backgroundColor = 'yellow';  }}Show more lines
-Usage:
-HTML<p appHighlight>Highlighted Text</p>Show more lines
-
-⚡ Signals API (Angular 16+)
-✅ Creating a Signal
-TypeScriptimport { signal } from '@angular/core';const count = signal(0);Show more lines
-✅ Reading a Signal
-TypeScriptconsole.log(count()); // Outputs: 0Show more lines
-✅ Updating a Signal
-TypeScriptcount.set(5);         // Set valuecount.update(c => c + 1); // IncrementShow more lines
-✅ Computed Signal
-TypeScriptimport { computed } from '@angular/core';const doubleCount = computed(() => count() * 2);Show more lines
-✅ Effect
-TypeScriptimport { effect } from '@angular/core';effect(() => {  console.log(`Count changed to: ${count()}`);});Show more lines
-✅ Signal Inputs (Angular 19+)
-TypeScript@InputSignal() count!: Signal<number>;
