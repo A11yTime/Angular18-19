@@ -55,7 +55,7 @@ Reactive primitives for state management (alternative to RxJS) [dev.to]
 
 
 
-🔷 Angular 19 Features
+# Angular 19 Features
 Released: November 2024
 Focus: SSR, hydration, reactivity, and tooling
 ✨ Major Features
