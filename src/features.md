@@ -4,7 +4,8 @@ Focus: Performance, developer experience, and zoneless architecture
 ✨ Major Features
 
 
-Zoneless Change Detection (Experimental)
+Zoneless Change Detection (Experimental)<img width="1536" height="1024" alt="Designer (5)" src="https://github.com/user-attachments/assets/a0660960-9a30-46eb-977b-97aee54d7dfe" />
+
 
 Removes dependency on zone.js
 Uses provideExperimentalZonelessChangeDetection() and signals
@@ -166,5 +167,7 @@ Use withNavigationErrorHandler() instead of Router.errorHandlerturn2search20�
 
 
 
+
+![Uploading Designer (5).png…]()
 
 
