@@ -1,9 +1,9 @@
 Angular 18 — Signals, Standalone APIs, and Better SSR
-1. ✅ Signals (Fine-grained reactivity)
+# 1.  Signals (Fine-grained reactivity)
 
 Angular 18 made the new Signals API stable. It’s a simpler, more predictable way to manage reactive state.
 
-✅ Key Features to Look At
+# Key Features to Look At
 
 ## Standalone Components, Directives & Pipes — Angular now strongly supports (and in some cases defaults to) standalone components, directives and pipes, which greatly reduces boilerplate (no need for NgModule in many cases). 
 
